@@ -1,21 +1,3 @@
-/*!
- * Isotope PACKAGED v3.0.6
- *
- * Licensed GPLv3 for open source use
- * or Isotope Commercial License for commercial use
- *
- * https://isotope.metafizzy.co
- * Copyright 2010-2018 Metafizzy
- */
-
-/**
- * Bridget makes jQuery widgets
- * v2.0.1
- * MIT license
- */
-
-/* jshint browser: true, strict: true, undef: true, unused: true */
-
 ( function( window, factory ) {
   // universal module definition
   /*jshint strict: false */ /* globals define, module, require */
@@ -473,13 +455,6 @@ return getSize;
 
 });
 
-/**
- * matchesSelector v2.0.2
- * matchesSelector( element, '.selector' )
- * MIT license
- */
-
-/*jshint browser: true, strict: true, undef: true, unused: true */
 
 ( function( window, factory ) {
   /*global define: false, module: false */
@@ -714,7 +689,7 @@ utils.docReady = function( callback ) {
 
 // ----- htmlInit ----- //
 
-// http://jamesroberts.name/blog/2010/02/22/string-functions-for-javascript-trim-to-camel-case-to-dashed-and-to-underscore/
+
 utils.toDashed = function( str ) {
   return str.replace( /(.)([A-Z])/g, function( match, $1, $2 ) {
     return $1 + '-' + $2;
@@ -722,11 +697,7 @@ utils.toDashed = function( str ) {
 };
 
 var console = window.console;
-/**
- * allow user to initialize classes via [data-namespace] or .js-namespace class
- * htmlInit( Widget, 'widgetName' )
- * options are parsed from data-namespace-options
- */
+
 utils.htmlInit = function( WidgetClass, namespace ) {
   utils.docReady( function() {
     var dashedNamespace = utils.toDashed( namespace );
